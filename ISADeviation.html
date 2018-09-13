@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Expires" content="0" />
+<title>ISA Deviation</title>
+</head>
+<body>
+<h3><a href="http://ukjim.16mb.com/index.html">HOME</a></h3>
+** Altitude is only the first 2 digits e.g. 36,000 feet would be 36.
+<BR><BR>
+<table border="0" style="100%">
+<tr>
+<th width="150" height="10">Cruise/Mid-Descent Altitude</th>
+<th width="150" height="10">Actual Temperature at given altitude</th>
+</tr>
+<tr>
+<td width="150" height="20"><input type = "text" id = "n1" value="0"/></td>
+<td width="150" height="20"><input type = "text" id = "n2" value="0" /></td>
+</tr>
+</table>
+<button onclick="sum()">GO!</button>
+<BR><BR>
+<table border="1">
+<tr>
+<th width="150" height="10">ISA Temp</th>
+<th width="150" height="10">ISA Deviation</th>
+</tr>
+<tr>
+<td width="150" height="20"><div id="ISATemp"></div></td>
+<td width="150" height="20"><div id="ISADev"></div></td>
+</tr>
+</table>
+
+<script type="text/javascript">
+  function sum() 
+{ 
+    var fn, ln, result1, result2, result3; 
+    fn = parseFloat(document.getElementById("n1").value, 10);
+    ln = parseFloat(document.getElementById("n2").value, 10);
+    result1 =  15-(fn*2); 
+     if (result1 < -58.5)
+     {
+             result3 = ln-(-58.5);
+     }
+     else
+     {
+              result3 = ln-result1;
+      }
+
+    document.getElementById("ISATemp").innerHTML = result1.toFixed(2);
+    document.getElementById("ISADev").innerHTML = result3.toFixed(2);
+    
+}
+  
+</script>
+
+</body>
+<HEAD>
+<META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
+</HEAD>
+</html>

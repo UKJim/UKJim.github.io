@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Expires" content="0" />
+<title>Descent Planner</title>
+</head>
+<body>
+<h3><a href="http://ukjim.16mb.com/index.html">HOME</a></h3>
+** Based on a 300 feet/min descent rate
+<BR>
+** Altitude is in thousand feet format i.e. 35000 NOT FL350.
+<BR><BR>
+<table border="0" style="100%">
+<tr>
+<th width="150" height="10">Start Altitude</th>
+<th width="150" height="10">End Altitude</th>
+<th width="150" height="10">Ground Speed (mph)</th>
+<th width="150" height="10">Additional Distance (optional)</th>
+</tr>
+<tr>
+<td width="150" height="20"><input type = "text" id = "start" value="0"/></td>
+<td width="150" height="20"><input type = "text" id = "end" value="0"/></td>
+<td width="150" height="20"><input type = "text" id = "speed" value="0" /></td>
+<td width="150" height="20"><input type = "text" id = "additional" value="0" /></td>
+</tr>
+</table>
+<button onclick="sum()">GO!</button>
+<BR><BR>
+<table border="1">
+<tr>
+<th width="150" height="10">Descent Distance (NM)</th>
+</tr>
+<tr>
+<td width="150" height="20"><div id="TotalDistance"></div></td>
+</tr>
+</table>
+
+<script type="text/javascript">
+  function sum() 
+{ 
+    var start, end, diff, speed, additional, speedpermin, minutes, startdistance; 
+    start = parseFloat(document.getElementById("start").value, 10);
+    end = parseFloat(document.getElementById("end").value, 10);
+    speed = parseFloat(document.getElementById("speed").value, 10);
+    additional = parseFloat(document.getElementById("additional").value, 10);
+    
+    diff=start-end
+    speedpermin=speed/60
+    minutes=diff/300
+    startdistance=speedpermin*minutes
+    totaldistance=startdistance+additional
+
+    document.getElementById("TotalDistance").innerHTML = totaldistance.toFixed(0);  
+}
+  
+</script>
+
+</body>
+<HEAD>
+<META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
+</HEAD>
+</html>
