@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
 <meta http-equiv="Expires" content="0" />
 <title>Climb Planner</title>
+<link rel="stylesheet" type="text/css" href="ukjimstyle.css"> 
 </head>
 <body>
 <h3><a href="index.html">HOME</a></h3>
 
-<form name="convert" >
-<table border="0" style="100%">
+<table id="t04">
 <tr>
-<th width="150" height="10">MPH</th>
-<th width="150" height="10">Knots</th>
+<th>
+
+<h1>Climb Planner</h1>
+
+<form name="convert" >
+<table id="t02">
+<tr>
+<th>MPH</th>
+<th>Knots</th>
 </tr>
 <tr>
 	<td><input type="number" step="0.1" name="mph" onchange="forward()" value=""></td>
@@ -20,32 +28,37 @@
 </tr>
 </table>
 <BR>
-** Altitude is in thousand feet format i.e. 35000 NOT FL350.
+<p>** Altitude is in thousand feet format i.e. 35000 NOT FL350.</p>
 <BR>
-<table border="0" style="100%">
+<table id="t02">
 <tr>
-<th width="150" height="10">Start Altitude</th>
-<th width="150" height="10">End Altitude</th>
-<th width="150" height="10">Feet Per Minute</th>
-<th width="150" height="10">Climb Ground Speed <br> (knots)</th>
+<th>Start Altitude</th>
+<th>End Altitude</th>
+<th>Feet Per Minute</th>
+<th>Climb Ground Speed <br> (knots)</th>
 </tr>
 <tr>
-<td width="150" height="20"><input type = "number" id = "start" value="0" onchange="sum()" /></td>
-<td width="150" height="20"><input type = "number" id = "end" value="10000" onchange="sum()" /></td>
-<td width="150" height="20"><input type = "number" id = "fpm" value="500" onchange="sum()" /></td>
-<td width="150" height="20"><input type = "number" id = "speed" value="170" onchange="sum()" /></td>
+<td><input type = "number" id = "start" value="0" onchange="sum()" /></td>
+<td><input type = "number" id = "end" value="10000" onchange="sum()" /></td>
+<td><input type = "number" id = "fpm" value="500" onchange="sum()" /></td>
+<td><input type = "number" id = "speed" value="170" onchange="sum()" /></td>
 </tr>
 </table>
 <BR>
-<table border="1">
+<table id="t03">
 <tr>
-<th width="150" height="10">Climb Distance (NM)</th>
+<th>Climb Distance (NM)</th>
 </tr>
 <tr>
-<td width="150" height="20"><div id="Distance" ></div></td>
+<td><div id="Distance" ></div></td>
 </tr>
 </table>
 </form>
+
+</th>
+</tr>
+</table>
+
 <script type="text/javascript">
   function sum() 
 { 
