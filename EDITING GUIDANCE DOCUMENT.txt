@@ -1,0 +1,9 @@
+
+Github branches
+
+1. Click 'Branch' and type in branch name - click enter
+2. Make updates to site - commit change
+3. Click 'Compare and Pull request'
+4. Add some details - click 'Create pull request
+5. Click 'Merge pull request' - confirm merge
+6. Click 'Delete' branch
