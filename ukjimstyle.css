@@ -1,3 +1,8 @@
+@font-face {
+    font-family: AngrybluFont;
+    src: url(angryblu.ttf);
+}
+
 a:link {
     text-decoration: none;
 }
@@ -34,19 +39,92 @@ a:active {
     color: #804000;
 }  
 
+div.gallery {
+    margin: auto;
+    padding: 10px;
+	width: 15%;
+	float: left;
+}
+
+div.gallery:hover {
+    border: 1px solid #804000;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
 body {
     background-color: #99e6ff;
 }
 
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+	text-align: left;
+	padding: 15px;
+}
+
+table#t01 {
+    width: 30%;    
+    background-color: #ffffff;
+	border: 4px solid black;
+	border-collapse: collapse;
+	text-align: left;
+	padding: 15px;
+}
+
+table#t02 {
+    width: 10%;    
+    background-color: #ffffff;
+	border: 2px solid black;
+	border-collapse: collapse;
+	text-align: left;
+	padding: 10px;
+}
+
+table#t03 {
+    width: 15%;    
+    background-color: #ffffff;
+	border: 2px solid black;
+	border-collapse: separate;
+	text-align: left;
+	padding: 10px;
+}
+
+table#t04 {
+    width: 30%;    
+    background-color: #ffffff;
+	border: 4px solid black;
+	border-collapse: collapse;
+	text-align: left;
+	padding: 15px;
+}
+
+div {
+	border-style: none;
+	text-align: left;
+}
+
 h1 {
 	color: #804000;
-    text-shadow: 0 0 4px black;
-	font-family: Verdana, Geneva, sans-serif;
+	font-family: AngrybluFont;
+	text-align: left;
+	font-size: 300%;
+	-webkit-text-stroke: 2px black;
 }
 
 h3 {
     color: black;
     text-align: left;
+	font-size: 100%;
 	font-family: Verdana, Geneva, sans-serif;
 } 
-  
+
+p {
+	color: black;
+	text-align: left;
+	font-size: 100%;
+	font-family: Verdana, Geneva, sans-serif;
+}  
