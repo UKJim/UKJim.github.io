@@ -1,6 +1,6 @@
 @font-face {
     font-family: AngrybluFont;
-    src: url("../UKJim/angryblu.ttf") format('truetype');
+    src: url("./css/angryblu.ttf") format('truetype');
 }
 
 a:link {
