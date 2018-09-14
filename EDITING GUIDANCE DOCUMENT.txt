@@ -1,5 +1,5 @@
 
-Github branches
+Github Branched Used For Editin (solves the caching issue)
 
 1. Click 'Branch' and type in branch name - click enter
 2. Make updates to site - commit change
