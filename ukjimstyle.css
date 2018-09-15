@@ -123,11 +123,14 @@ table#t04 {
 }
 
 table#t05 {
+	width:80%; 
+    margin-left:10%; 
+    margin-right:10%;
 	max-width: 1920px;
 	min-width: 480px;    
     background-color: #ffffff;
 	border: 2px solid black;
-	border-collapse: separate;
+	border-collapse: collapse;
 	text-align: left;
 	padding: 10px;
 }
