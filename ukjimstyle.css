@@ -71,7 +71,9 @@ table, th, td {
 }
 
 table#t01 {
-	width:100%; 
+	width:80%; 
+	margin-left:10%; 
+        margin-right:10%;
 	max-width: 1920px;
 	min-width: 480px;
 	background-color: #ffffff;
@@ -82,7 +84,9 @@ table#t01 {
 }
 
 table#t02 {
-	width:100%; 
+	width:80%; 
+	margin-left:10%; 
+        margin-right:10%; 
 	max-width: 1920px;
 	min-width: 480px;    
     background-color: #ffffff;
@@ -93,7 +97,9 @@ table#t02 {
 }
 
 table#t03 {
-	width:100%; 
+	width:80%; 
+	margin-left:10%; 
+        margin-right:10%; 
 	max-width: 1920px;
 	min-width: 480px;    
     background-color: #ffffff;
@@ -104,7 +110,9 @@ table#t03 {
 }
 
 table#t04 {
-	width:100%; 
+	width:80%; 
+	margin-left:10%; 
+        margin-right:10%; 
 	max-width: 1920px;
 	min-width: 480px;    
     background-color: #ffffff;
@@ -115,7 +123,9 @@ table#t04 {
 }
 
 table#t05 {
-	width:100%; 
+	width:80%; 
+	margin-left:10%; 
+        margin-right:10%; 
 	max-width: 1920px;
 	min-width: 480px;    
     background-color: #ffffff;
