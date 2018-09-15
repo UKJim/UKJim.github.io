@@ -1,6 +1,10 @@
 @font-face {
-    font-family: AngrybluFont;
-    src: url(./css/ANGRYBLU.TTF);
+    font-family: 'angryblueregular';
+    src: url('angryblu.woff2') format('woff2'),
+         url('angryblu.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 a:link {
@@ -111,7 +115,7 @@ div {
 
 h1 {
 	color: #804000;
-	font-family: AngrybluFont;
+	font-family: angryblueregular;
 	text-align: left;
 	font-size: 300%;
 	-webkit-text-stroke: 2px black;
