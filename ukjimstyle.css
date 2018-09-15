@@ -114,8 +114,6 @@ table#t04 {
 }
 
 div {
-	max-width: 1920px;
-	min-width: 480px; 
 	border-style: none;
 	text-align: left;
 }
