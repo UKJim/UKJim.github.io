@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'angryblueregular';
-    src: url('./css/angryblu.woff2') format('woff2'),
-         url('./css/angryblu.woff') format('woff');
+    src: url(./css/angryblu.woff2) format('woff2'),
+         url(./css/angryblu.woff) format('woff');
     font-weight: normal;
     font-style: normal;
 
