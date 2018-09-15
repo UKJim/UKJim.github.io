@@ -85,8 +85,8 @@ table#t01 {
 
 table#t02 {
 	width:60%; 
-    margin-left:10%; 
-    margin-right:10%;
+    margin-left:20%; 
+    margin-right:20%;
 	max-width: 1920px;
 	min-width: 480px;    
     background-color: #ffffff;
@@ -121,6 +121,17 @@ table#t04 {
 	text-align: left;
 	padding: 15px;
 }
+
+table#t05 {
+	max-width: 1920px;
+	min-width: 480px;    
+    background-color: #ffffff;
+	border: 2px solid black;
+	border-collapse: collapse;
+	text-align: left;
+	padding: 10px;
+}
+
 
 div {
 	border-style: none;
