@@ -70,9 +70,9 @@ table, th, td {
 }
 
 table#t01 {
-	width:70%; 
-    	margin-left:15%; 
-    	margin-right:15%;
+	width:60%; 
+    margin-left:20%; 
+    margin-right:20%;
 	max-width: 1920px;
 	min-width: 480px;
 	background-color: #ffffff;
@@ -117,14 +117,14 @@ div {
 h1 {
 	color: #804000;
 	font-family: angryblueregular;
-	text-align: left;
+	text-align: center;
 	font-size: 200%;
 	-webkit-text-stroke: 2px black;
 }
 
 h3 {
     color: black;
-    text-align: left;
+    text-align: center;
 	font-size: 100%;
 	font-family: Verdana, Geneva, sans-serif;
 } 
