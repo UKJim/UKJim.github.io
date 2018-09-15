@@ -10,54 +10,66 @@
 <body>
 <h3><a href="index.html">HOME</a></h3>
 
-<table id="t04">
-<tr>
-<th>
-<h1>Descent Planner</h1>
+<table id="t02">
+	<tr>
+		<th><h1>Descent Planner</h1>
+	</tr>
 
 <form name="convert" >
-<table id="t02">
-<tr>
-<th>MPH</th>
-<th>Knots</th>
-</tr>
-<tr>
-	<td><input type="number" step="0.1" name="mph" onchange="forward()" value=""></td>
-	<td><input type="number" step="0.1" name="knots" onchange="backward()" value=""></td>
-</tr>
-</table>
-<BR>
-<p>** Altitude is in thousand feet format i.e. 35000 NOT FL350.</p>
-<BR>
-<table id="t05">
-<tr>
-<th>Start Altitude</th>
-<th>End Altitude</th>
-<th>Feet Per Minute</th>
-<th>Ground Speed <br>(knots)</th>
-<th>Additional Distance (optional)</th>
-</tr>
-<tr>
-<td><input type = "text" id = "start" value="0" onchange="sum()"/></td>
-<td><input type = "text" id = "end" value="0" onchange="sum()"/></td>
-<td><input type = "number" id = "fpm" value="500" onchange="sum()" /></td>
-<td><input type = "text" id = "speed" value="0" onchange="sum()"/></td>
-<td><input type = "text" id = "additional" value="0" onchange="sum()"/></td>
-</tr>
-</table>
-<BR>
-<table id="t03">
-<tr>
-<th>Descent Distance (NM)</th>
-</tr>
-<tr>
-<td><div id="TotalDistance"></div></td>
-</tr>
-</table>
-</form>
 
-</th>
-</tr>
+	<tr>
+		<td>
+			<table id="t03">
+				<tr>
+					<th id="th03">MPH</th>
+					<th id="th03">Knots</th>
+				</tr>
+				<tr>
+					<td  id="td03"><input type="number" step="0.1" name="mph" onchange="forward()" value=""></td>
+					<td  id="td03"><input type="number" step="0.1" name="knots" onchange="backward()" value=""></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	
+	<tr>
+		<td><BR><p>** Altitude is in thousand feet format i.e. 35000 NOT FL350.</p><BR></td>
+	</tr>
+	
+	<tr>
+		<th>
+			<table id="t03">
+				<tr>
+					<th id="th03">Start Altitude</th>
+					<th id="th03">End Altitude</th>
+					<th id="th03">Feet Per Minute</th>
+					<th id="th03">Ground Speed <br>(knots)</th>
+					<th id="th03">Additional Distance (optional)</th>
+				</tr>
+				<tr>
+					<td id="td03"><input type = "text" id = "start" value="0" onchange="sum()"/></td>
+					<td id="td03"><input type = "text" id = "end" value="0" onchange="sum()"/></td>
+					<td id="td03"><input type = "number" id = "fpm" value="500" onchange="sum()" /></td>
+					<td id="td03"><input type = "text" id = "speed" value="0" onchange="sum()"/></td>
+					<td id="td03"><input type = "text" id = "additional" value="0" onchange="sum()"/></td>
+				</tr>
+			</table>
+		</th>
+	</tr>
+
+	<tr>
+		<th>
+			<table id="t04">
+				<tr>
+					<th id="th04">Descent Distance (NM)</th>
+				</tr>
+				<tr>
+					<td id="td04"><div id="TotalDistance"></div></td>
+				</tr>
+			</table>
+		</th>
+	</tr>
+</form>
 </table>
 
 <script type="text/javascript">
