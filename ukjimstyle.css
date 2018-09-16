@@ -87,8 +87,6 @@ td {
 table#t01 {
 	width: 800px;
     height: 400px; 
-	margin-left: 560px; 
-    margin-right: 560px;
 	max-width: 1920px;
 	min-width: 800px;
 	background-color: #ffffff;
@@ -101,8 +99,6 @@ table#t01 {
 table#t02 {
 	width: 800px;
     height: 400px; 
-	margin-left: 560px; 
-    margin-right: 560px;
 	max-width: 1920px;
 	min-width: 800px;
 	background-color: #ffffff;
