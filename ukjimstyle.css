@@ -111,9 +111,9 @@ table#t02 {
 }
 
 table#t03 {
-	width:60%; 
-	margin-left:20%; 
-    margin-right:20%;
+	width:600px; 
+	height: 400px;
+	margin-left:10px; 
 	max-width: 1920px;
 	min-width: 480px;
 	background-color: #ffffff;
@@ -138,9 +138,9 @@ td#td03 {
 }
 
 table#t04 {
-	width:60%; 
-	margin-left:20%; 
-    margin-right:20%;
+	width:600px; 
+	height: 400px;
+	margin-left:10px; 
 	max-width: 1920px;
 	min-width: 480px;
 	background-color: #ffffff;
