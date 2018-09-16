@@ -112,10 +112,10 @@ table#t02 {
 
 table#t03 {
 	width:600px; 
-	height: 400px;
+	height: 200px;
 	margin-left:10px; 
 	max-width: 1920px;
-	min-width: 480px;
+	min-width: 600px;
 	background-color: #ffffff;
 	border: none;
 	border-collapse: collapse;
@@ -139,10 +139,10 @@ td#td03 {
 
 table#t04 {
 	width:600px; 
-	height: 400px;
+	height: 200px;
 	margin-left:10px; 
 	max-width: 1920px;
-	min-width: 480px;
+	min-width: 600px;
 	background-color: #ffffff;
 	border: none;
 	border-collapse: collapse;
