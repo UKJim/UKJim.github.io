@@ -84,15 +84,16 @@
 <script type="text/javascript">
   function sum() 
 { 
-    var start, end, diff, speed, additional, speedpermin, minutes, startdistance; 
+    var start, end, diff, speed, fpm, additional, speedpermin, minutes, startdistance; 
     start = parseFloat(document.getElementById("start").value, 10);
     end = parseFloat(document.getElementById("end").value, 10);
+    fpm = parseFloat(document.getElementById("fpm").value, 10);
     speed = parseFloat(document.getElementById("speed").value, 10);
     additional = parseFloat(document.getElementById("additional").value, 10);
     
     diff=start-end
     speedpermin=speed/60
-    minutes=diff/300
+    minutes=diff/fpm
     startdistance=speedpermin*minutes
     totaldistance=startdistance+additional
 
