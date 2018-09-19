@@ -10,31 +10,46 @@
 <body>
 <h3><a href="index.html">HOME</a></h3>
 
-<h1>ISA Deviation Calculator</h1>
+<table id="t02">
+	<tr>
+		<th><h1>ISA Deviation Calculator</h1></th>
+	</tr>
 
-<p>** Altitude is only the first 2 digits e.g. 36,000 feet would be 36.</p>
-<BR><BR>
-<table border="0" style="100%">
-<tr>
-<th width="150" height="10">Cruise/Mid-Descent Altitude</th>
-<th width="150" height="10">Actual Temperature at given altitude</th>
-</tr>
-<tr>
-<td width="150" height="20"><input type = "text" id = "n1" value="0"/></td>
-<td width="150" height="20"><input type = "text" id = "n2" value="0" /></td>
-</tr>
-</table>
-<button onclick="sum()">GO!</button>
-<BR><BR>
-<table border="1">
-<tr>
-<th width="150" height="10">ISA Temp</th>
-<th width="150" height="10">ISA Deviation</th>
-</tr>
-<tr>
-<td width="150" height="20"><div id="ISATemp"></div></td>
-<td width="150" height="20"><div id="ISADev"></div></td>
-</tr>
+	<tr>
+		<td><p>** Altitude is only the first 2 digits e.g. 36,000 feet would be 36.</p></td>
+	</tr>
+
+<form name="convert" >
+	<tr>
+		<td>
+			<table id="t03">
+				<tr>
+					<th id="th03">Cruise/Mid-Descent Altitude</th>
+					<th id="th03">Actual Temperature at given altitude</th>
+				</tr>
+				<tr>
+					<td id="td03"><input type = "text" id = "n1" onchange="sum()" value="0"/></td>
+					<td id="td03"><input type = "text" id = "n2" onchange="sum()" value="0" /></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	
+	<tr>
+		<th>
+			<table id="t04">
+				<tr>
+					<th id="th04">ISA Temp</th>
+					<th id="th04">ISA Deviation</th>
+				</tr>
+				<tr>
+					<td id="td04"><div id="ISATemp"></div></td>
+					<td id="td04"><div id="ISADev"></div></td>
+				</tr>
+			</table>
+		</th>
+	</tr>
+</form>
 </table>
 
 <script type="text/javascript">
