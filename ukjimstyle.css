@@ -7,8 +7,12 @@
 }
 
 hr.hline_color {
-   background:#33ccff;
-   height:2px;
+    overflow: visible; /* For IE */
+    height: 30px;
+    border-style: solid;
+    border-color: #33ccff;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
 }
 
 a:link {
