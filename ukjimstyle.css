@@ -4,8 +4,13 @@
          url(./css/angryblu.woff) format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
+
+hr.hline_color {
+   background:#CFF;
+   height:2px;
+}
+
 a:link {
     text-decoration: none;
 }
