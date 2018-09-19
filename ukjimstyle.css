@@ -229,13 +229,33 @@ div {
 	min-height: 20px;
 }
 
+div.a {
+    font-size: 16px;
+	font-family: Verdana, Geneva, sans-serif;
+	color: black;
+	text-align: left;
+}
+
+div.b {
+    font-size: 12px;
+	font-family: Verdana, Geneva, sans-serif;
+	color: black;
+	text-align: left;
+}
+
 h1 {
 	color: #804000;
 	font-family: angryblueregular;
 	text-align: center;
-	font-size: 200%;
+	font-size: 30px;
 	-webkit-text-stroke: 1px black;
 }
+
+h2 {
+    color: black;
+    text-align: left;
+	font-size: 75%;
+	font-family: Verdana, Geneva, sans-serif;
 
 h3 {
     color: black;
@@ -243,10 +263,3 @@ h3 {
 	font-size: 100%;
 	font-family: Verdana, Geneva, sans-serif;
 } 
-
-p {
-	color: black;
-	text-align: left;
-	font-size: 100%;
-	font-family: Verdana, Geneva, sans-serif;
-}  
