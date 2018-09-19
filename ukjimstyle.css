@@ -6,24 +6,27 @@
     font-style: normal;
 }
 
-hr.hline_color {
+hr.hline_down {
     overflow: visible; /* For IE */
-    height: 30px;
+    height: 20px;
     border-style: solid;
     border-color: #33ccff;
     border-width: 1px 0 0 0;
     border-radius: 20px;
 }
 
-hr.hline_color:before { /* Not really supposed to work, but does */
-    display: block;
-    content: "";
-    height: 30px;
-    margin-top: -31px;
+hr.hline_up { 
+  overflow: visible; /* For IE */
+    height: 20px;
     border-style: solid;
     border-color: #33ccff;
     border-width: 0 0 1px 0;
-    border-radius: 20px;
+    border-radius: 20px 
+} 
+
+hr.hline_dashed {
+	background-color: #fff;
+	border-top: 2px dashed #33ccff;
 }
 
 a:link {
@@ -191,6 +194,33 @@ td#td04 {
 	text-align: left;
 	padding: 2px;
 	height: 40px;
+}
+
+table#t_gallery {
+	width:390px; 
+	height: 100px; 
+	margin-left:5px; 
+	max-width: 1920px;
+	min-width: 390px;
+	background-color: #ffffff;
+	border: none;
+	border-collapse: collapse;
+	text-align: left;
+	padding:15px;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+td#td_gallery {
+    border: none;
+    border-collapse: collapse;
+	margin: auto;
+    padding: 10px;
+	width: 15%;
+	float: left;
 }
 
 div {
