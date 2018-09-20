@@ -46,18 +46,18 @@
 		<th>
 			<table id="t03">
 				<tr>
-					<td><div class="a">Descent Details</div></td>
+					<td colspan="2"><div class="a">Descent Details</div></td>
 				</tr>
 				<tr>
-					<td><div class="b">** Altitude is in thousand feet format i.e. 35000 NOT FL350.</div></td>
+					<td colspan="2"><div class="b">** Altitude is in thousand feet format i.e. 35000 NOT FL350.</div></td>
 				</tr>
 				<tr>
 					<th id="th03">Start Altitude</th>
 					<th id="th03">End Altitude</th>
 				</tr>
 				<tr>
-					<td id="td03"><input type = "text" id = "start" value="0" onchange="sum()"/></td>
-					<td id="td03"><input type = "text" id = "end" value="0" onchange="sum()"/></td>
+					<td id="td03"><input type = "number" id = "start" value="0" onchange="sum()"/></td>
+					<td id="td03"><input type = "number" id = "end" value="0" onchange="sum()"/></td>
 				</tr>
 				<tr>
 					<th id="th03">Feet Per Minute</th>
@@ -65,13 +65,13 @@
 				</tr>
 				<tr>
 					<td id="td03"><input type = "number" id = "fpm" value="500" onchange="sum()" /></td>
-					<td id="td03"><input type = "text" id = "speed" value="0" onchange="sum()"/></td>
+					<td id="td03"><input type = "number" id = "speed" value="0" onchange="sum()"/></td>
 				</tr>
 				<tr>
-					<th id="th03">Additional Distance (optional)</th>
+					<th id="th03">Additional <br> Distance (nm)</th>
 				</tr>
 				<tr>
-					<td id="td03"><input type = "text" id = "additional" value="0" onchange="sum()"/></td>
+					<td id="td03"><input type = "number" id = "additional" value="0" onchange="sum()"/></td>
 				</tr>
 				
 			</table>
