@@ -27,9 +27,9 @@
 					<th id="th03">Millibars</th>
 					<th id="th03">Inches Mercury</th>
 				</tr>
-				<tr>
-					<td  id="td03"><input type="number" step="0.1" name="millibars" onchange="inchessum()" value=""></td>
-					<td  id="td03"><input type="number" step="0.1" name="inchesmercury" value=""></td>
+<tr>
+					<td  id="td03"><input type="number" step="0.1" name="millibars" onchange="forward()" value=""></td>
+					<td  id="td03"><input type="number" step="0.1" name="inchesmercury" onchange="backward()" value=""></td>
 				</tr>
 			</table>
 			<hr class="hline_up" />
@@ -44,7 +44,8 @@ function forward() {
       with (document.convert) {
 	 millibars.value = millibars.value.toString().replace(/[^\d\.eE-]/g,'');
 	 if (millibars.value*0.02953 != 0) {
-	    inchesmercury.value = millibars.value*0.02953;
+	    inchesmercury.value = (millibars.value*0.02953).toFixed(2);
+		
 	 }
       }
    }
@@ -57,14 +58,6 @@ function backward() {
       }
    }
   
-function inchessum() 
-{ 
-    var millibars, inches; 
-millibars = parseFloat(document.getElementById("millibars").value, 10);
-    
-    inches=millibars*0.02953;
-    document.getElementById("inchesmercury").innerHTML = inches.toFixed(0);  
-}
 </script>
 
 </body>
