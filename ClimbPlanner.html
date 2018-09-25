@@ -77,9 +77,11 @@
 			<table id="t04">
 				<tr>
 					<th id="th04">Climb Distance (NM)</th>
+					<th id="th04">Time/Duration (Minutes)</th>
 				</tr>
 				<tr>
 					<td id="td04"><div id="Distance" ></div></td>
+					<td id="td04"><div id="Time" ></div></td>
 				</tr>
 			</table>
 			<hr class="hline_up" />
@@ -102,7 +104,8 @@
     minutes=diff/fpm
     distance=speedpermin*minutes
 
-    document.getElementById("Distance").innerHTML = distance.toFixed(0);  
+    document.getElementById("Distance").innerHTML = distance.toFixed(0);
+	document.getElementById("Time").innerHTML = minutes.toFixed(0);
 }
 
 function forward() {
