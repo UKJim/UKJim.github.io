@@ -84,9 +84,11 @@
 			<table id="t04">
 				<tr>
 					<th id="th04">Descent Distance (NM)</th>
+					<th id="th04">Time/Duration (Minutes)</th>
 				</tr>
 				<tr>
 					<td id="td04"><div id="TotalDistance"></div></td>
+					<td id="td04"><div id="Time"></div></td>
 				</tr>
 			</table>
 			<hr class="hline_up" />
@@ -111,7 +113,8 @@
     startdistance=speedpermin*minutes
     totaldistance=startdistance+additional
 
-    document.getElementById("TotalDistance").innerHTML = totaldistance.toFixed(0);  
+    document.getElementById("TotalDistance").innerHTML = totaldistance.toFixed(0);
+	document.getElementById("Time").innerHTML = minutes.toFixed(0);
 }
 
 function forward() {
