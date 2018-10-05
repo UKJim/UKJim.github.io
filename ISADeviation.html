@@ -4,63 +4,64 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
 <meta http-equiv="Expires" content="0" />
-<link rel="stylesheet" type="text/css" href="ukjimstyle.css">
-<title>ISA Deviation</title>
+<link rel="stylesheet" type="text/css" href="css/ukjimstyle_ISADeviation.css">
+<title>Climb Planner</title>
 </head>
 <body>
-<h3><a href="index.html">HOME</a></h3>
 
-<table id="t02">
-	<tr>
-		<th><h1>ISA Deviation Calculator</h1></th>
-	</tr>
+<div class="container">
 
-	<tr>
-		<th>
-			<hr class="hline_down" />
-		</th>
-	</tr>
+	<div class="header">
+		<h1>ISA Deviation Calculator</h1>
+	</div>
+	<div class="line_down">
+		<hr class="hline_down" />
+	</div>
 
-<form name="convert" >
-	<tr>
-		<th>
-			<table id="t03">
-				<tr>
-					<td colspan="2"><div class="a">ISA Deviation Details:</div></td>
-				</tr>
-				<tr>
-					<td colspan="2"><div class="b">** Altitude is in thousand feet format i.e. 35000 NOT FL350.</div></td>
-				</tr>
-				<tr>
-					<th id="th03">Cruise/Mid-Descent Altitude</th>
-					<th id="th03">Actual Temperature at given altitude</th>
-				</tr>
-				<tr>
-					<td id="td03"><input type = "text" id = "n1" onchange="sum()" value="0"/></td>
-					<td id="td03"><input type = "text" id = "n2" onchange="sum()" value="0" /></td>
-				</tr>
-			</table>
-		</th>
-	</tr>
+	<div class="descriptive_text1">
+		ISA Deviation Details::
+	</div>
+	<div class="b">** Altitude is in thousand feet format i.e. 35000 NOT FL350.</div>
+	<div class="table_container2">
+		<form name="alt_convert" >
+			<div class="Cruise_Mid_header_left">
+				Cruise/Mid-Descent Altitude
+			</div>
+			<div class="Actual_Temp_header_right">
+				Actual Temperature at given altitude
+			</div>
+			<div class="Cruise_Mid_input_left">
+				<input type = "text" id = "n1" onchange="sum()" value="0"/>
+			</div>
+			<div class="Actual_Temp_input_right">
+				<input type = "text" id = "n2" onchange="sum()" value="0" />
+			</div>
+				
 	
-	<tr>
-		<th>
-			<hr class="hline_dashed" />
-			<table id="t04">
-				<tr>
-					<th id="th04">ISA Temp</th>
-					<th id="th04">ISA Deviation</th>
-				</tr>
-				<tr>
-					<td id="td04"><div id="ISATemp"></div></td>
-					<td id="td04"><div id="ISADev"></div></td>
-				</tr>
-			</table>
-			<hr class="hline_up" />
-		</th>
-	</tr>
-</form>
-</table>
+	<div class="line_dashed">
+		<hr class="hline_dashed" />
+	</div>
+	
+		<div class="ISA_Temp_header_left">
+				ISA Temp
+			</div>
+			<div class="ISA_Deviation_header_right">
+				ISA Deviation
+			</div>
+			<div id="ISATemp"></div>
+			<div id="ISADev"></div>
+	
+	</div>
+	
+	<div class="line_up_2">
+		<hr class="hline_up" />
+	</div>
+	</form>
+	
+	<div class="home">
+		<a href="index.html">HOME</a>
+	</div>
+</div>
 
 <script type="text/javascript">
   function sum() 
@@ -85,6 +86,6 @@
   
 </script>
 
-</body>
 
+</body>
 </html>
