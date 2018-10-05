@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Expires" content="0" />
+<link rel="stylesheet" type="text/css" href="css/ukjimstyle_MillibarstoInches.css">
+<title>Millibars to Inches of Mercury</title>
+</head>
+<body>
+
+<div class="container">
+
+	<div class="header">
+		<h1>Millibars to Inches Mercury</h1>
+	</div>
+	<div class="line_down">
+		<hr class="hline_down" />
+	</div>
+	<div class="descriptive_text">
+		Converter:
+	</div>
+	<div class="table_container">
+		<div class="table_header_left">
+			Millibars
+		</div>
+		<div class="table_header_right">
+			Inches Mercury
+		</div>
+		<form name="convert" >
+			<div class="table_input_left">
+				<input type="number" step="0.1" name="millibars" onchange="forward()" value="">
+			</div>
+			<div class="table_input_right">
+				<input type="number" step="0.1" name="inchesmercury" onchange="backward()" value="">
+			</div>
+		</form>
+	</div>
+	<div class="line_dashed">
+		<hr class="hline_dashed" />
+	</div>
+	<div class="line_up">
+		<hr class="hline_up" />
+	</div>
+	
+	<div class="home">
+		<a href="index.html">HOME</a>
+	</div>
+</div>
+
+<script type="text/javascript">
+function forward() {
+      with (document.convert) {
+	 millibars.value = millibars.value.toString().replace(/[^\d\.eE-]/g,'');
+	 if (millibars.value*0.02953 != 0) {
+	    inchesmercury.value = (millibars.value*0.02953).toFixed(2);
+		
+	 }
+      }
+   }
+function backward() {
+      with (document.convert) {
+	 inchesmercury.value = inchesmercury.value.toString().replace(/[^\d\.eE-]/g,'');
+	 if (inchesmercury.value/0.02953 != 0) {
+	    millibars.value = Math.round(inchesmercury.value/0.02953);
+	 }
+      }
+   }
+  
+</script>
+
+
+</body>
+</html>

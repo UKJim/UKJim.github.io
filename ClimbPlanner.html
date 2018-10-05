@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Expires" content="0" />
+<link rel="stylesheet" type="text/css" href="css/ukjimstyle_ClimbPlanner.css">
+<title>Climb Planner</title>
+</head>
+<body>
+
+<div class="container">
+
+	<div class="header">
+		<h1>Climb Planner</h1>
+	</div>
+	<div class="line_down">
+		<hr class="hline_down" />
+	</div>
+	<div class="descriptive_text1">
+		Speed Converter:
+	</div>
+	<div class="table_container1">
+		<div class="MPH_header_left">
+			MPH
+		</div>
+		<div class="Knots_header_right">
+			Knots
+		</div>
+		<form name="speed_convert" >
+			<div class="MPH_input_left">
+				<input type="number" step="0.1" name="mph" onchange="forward()" value="" />
+			</div>
+			<div class="Knots_input_right">
+				<input type="number" step="0.1" name="knots" onchange="backward()" value="" />
+			</div>
+		</form>
+	</div>
+	<div class="line_up">
+		<hr class="hline_up" />
+	</div>
+	<div class="line_down_2">
+		<hr class="hline_down" />
+	</div>
+	<div class="descriptive_text2">
+		Climb Details:
+	</div>
+	<div class="b">** Altitude is in thousand feet format i.e. 35000 NOT FL350.</div>
+	<div class="table_container2">
+		<form name="alt_convert" >
+			<div class="Start_header_left">
+				Start Altitude
+			</div>
+			<div class="End_header_right">
+				End Altitude
+			</div>
+			<div class="Start_input_left">
+				<input type = "number" id = "start" value="0" onchange="sum()" />
+			</div>
+			<div class="End_input_right">
+				<input type = "number" id = "end" value="10000" onchange="sum()" />
+			</div>
+			<div class="fpm_header_left">
+				Feet Per Minute
+			</div>
+			<div class="ground_speed_header_right">
+				Ground Speed (Knots)
+			</div>
+			<div class="fpm_input_left">
+				<input type = "number" id = "fpm" value="500" onchange="sum()" />
+			</div>
+			<div class="ground_speed_input_right">
+				<input type = "number" id = "speed" value="170" onchange="sum()" />
+			</div>
+	
+	
+	<div class="line_dashed">
+		<hr class="hline_dashed" />
+	</div>
+	
+		<div class="climb_distance_header_left">
+				Climb Distance (NM)
+			</div>
+			<div class="time_duration_header_right">
+				Time/Duration (Minutes)
+			</div>
+			<div id="Distance"></div>
+			<div id="Time"></div>
+	
+	</div>
+	
+	<div class="line_up_2">
+		<hr class="hline_up" />
+	</div>
+	</form>
+	
+	<div class="home">
+		<a href="index.html">HOME</a>
+	</div>
+</div>
+
+<script type="text/javascript">
+  function sum() 
+{ 
+    var start, end, diff, speed, speedpermin, minutes, distance; 
+	start = parseFloat(document.getElementById("start").value, 10);
+    end = parseFloat(document.getElementById("end").value, 10);
+	fpm = parseFloat(document.getElementById("fpm").value, 10);
+    speed = parseFloat(document.getElementById("speed").value, 10);
+    
+    diff=end-start
+    speedpermin=speed/60
+    minutes=diff/fpm
+    distance=speedpermin*minutes
+
+    document.getElementById("Distance").innerHTML = distance.toFixed(0);
+	document.getElementById("Time").innerHTML = minutes.toFixed(0);
+}
+
+function forward() {
+      with (document.speed_convert) {
+	 mph.value = mph.value.toString().replace(/[^\d\.eE-]/g,'');
+	 if (mph.value*0.86897624190065 != 0) {
+	    knots.value = mph.value*0.86897624190065;
+	 }
+      }
+   }
+   function backward() {
+      with (document.speed_convert) {
+	 knots.value = knots.value.toString().replace(/[^\d\.eE-]/g,'');
+	 if (knots.value/0.86897624190065 != 0) {
+	    mph.value = knots.value/0.86897624190065;
+	 }
+      }
+   }
+
+</script>
+
+
+</body>
+</html>

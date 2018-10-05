@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Expires" content="0" />
+<link rel="stylesheet" type="text/css" href="css/ukjimstyle_ISADeviation.css">
+<title>Climb Planner</title>
+</head>
+<body>
+
+<div class="container">
+
+	<div class="header">
+		<h1>ISA Deviation Calculator</h1>
+	</div>
+	<div class="line_down">
+		<hr class="hline_down" />
+	</div>
+
+	<div class="descriptive_text1">
+		ISA Deviation Details::
+	</div>
+	<div class="b">** Altitude is in thousand feet format i.e. 35000 NOT FL350.</div>
+	<div class="table_container2">
+		<form name="alt_convert" >
+			<div class="Cruise_Mid_header_left">
+				Cruise/Mid-Descent Altitude
+			</div>
+			<div class="Actual_Temp_header_right">
+				Actual Temperature at given altitude
+			</div>
+			<div class="Cruise_Mid_input_left">
+				<input type = "text" id = "n1" onchange="sum()" value="0"/>
+			</div>
+			<div class="Actual_Temp_input_right">
+				<input type = "text" id = "n2" onchange="sum()" value="0" />
+			</div>
+				
+	
+	<div class="line_dashed">
+		<hr class="hline_dashed" />
+	</div>
+	
+		<div class="ISA_Temp_header_left">
+				ISA Temp
+			</div>
+			<div class="ISA_Deviation_header_right">
+				ISA Deviation
+			</div>
+			<div id="ISATemp"></div>
+			<div id="ISADev"></div>
+	
+	</div>
+	
+	<div class="line_up_2">
+		<hr class="hline_up" />
+	</div>
+	</form>
+	
+	<div class="home">
+		<a href="index.html">HOME</a>
+	</div>
+</div>
+
+<script type="text/javascript">
+  function sum() 
+{ 
+    var fn, ln, result1, result2, result3; 
+    fn = parseFloat(document.getElementById("n1").value, 10);
+    ln = parseFloat(document.getElementById("n2").value, 10);
+    result1 =  15-(fn*2); 
+     if (result1 < -58.5)
+     {
+             result3 = ln-(-58.5);
+     }
+     else
+     {
+              result3 = ln-result1;
+      }
+
+    document.getElementById("ISATemp").innerHTML = result1.toFixed(2);
+    document.getElementById("ISADev").innerHTML = result3.toFixed(2);
+    
+}
+  
+</script>
+
+
+</body>
+</html>
