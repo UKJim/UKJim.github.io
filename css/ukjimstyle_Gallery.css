@@ -1,9 +1,105 @@
-@font-face {
-    font-family: 'angryblueregular';
-    src: url(./css/angryblu.woff2) format('woff2'),
-         url(./css/angryblu.woff) format('woff');
-    font-weight: normal;
-    font-style: normal;
+
+div.container{
+	margin: auto;
+	min-width: 400px;
+	min-height: 700px;
+	max-width: 600px;
+	max-height: 700px;
+	background-color: white;
+	border: 4px solid black;
+	border-collapse: collapse;
+	overflow: auto;
+	position: relative;
+}
+
+div.header{
+	width:100%; 
+	height: 20%;
+	background-color: #ffffff;
+	position: absolute;
+	top: 0%;
+    right: 0%;
+}
+
+div.home{
+	background-color: white;
+	width:80%; 
+	height: 3%;
+	position: absolute;
+	top: 95%;
+    right: 10%;
+	left: 10%;
+    border: none;
+    border-collapse: collapse;
+	text-align: center;
+	font-size: 16px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-weight: bold;
+}
+
+div.table_container {
+    background-color:  black;
+	width:90%; 
+	height: 60%;
+	position: absolute;
+	top: 25%;
+    right: 5%;
+	left: 5%;
+    border: none;
+    border-collapse: collapse;
+}
+
+iframe.gallery1 {
+	
+	border:none; 
+	width: 100%;
+	height: 100%; 
+	display:block;
+}
+
+div.descriptive_text {
+    background-color:  white;
+	width:99%; 
+	height: 5%;
+	position: absolute;
+	top: 15%;
+    right: 0%;
+	left: 1%;
+	font-size: 16px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-weight: bold;
+	color: black;
+	text-align: left;
+}
+
+div.line_down{
+	width:100%; 
+	height: 5%;
+	background-color: #ffffff;
+	position: absolute;
+	top: 10%;
+    right: 0%;
+	left: 0%;
+}
+
+div.line_up{
+	width:100%; 
+	height: 5%;
+	background-color: #ffffff;
+	position: absolute;
+	top: 90%;
+    right: 0%;
+	left: 0%;
+}
+
+div.line_dashed{
+	width:100%; 
+	height: 5%;
+	background-color: #ffffff;
+	position: absolute;
+	top: 40%;
+    right: 0%;
+	left: 0%;
 }
 
 hr.hline_down {
@@ -28,6 +124,15 @@ hr.hline_dashed {
 	background-color: #fff;
 	border-top: 2px dashed #33ccff;
 }
+
+@font-face {
+    font-family: 'angryblueregular';
+    src: url(./angryblu.woff2) format('woff2'),
+         url(./angryblu.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 a:link {
     text-decoration: none;
@@ -67,159 +172,8 @@ a:active {
 
 body {
     background-color: #8cbac5;
-}
-
-table{
-    border: 1px solid black;
-    border-collapse: collapse;
-	text-align: left;
-	padding: 2px;
-}
-
-tr{
-    border: none;
-    border-collapse: collapse;
-	text-align: left;
-	padding: 2px;
-}
-
-th{
-    border: none;
-    border-collapse: collapse;
-	text-align: left;
-	padding: 2px;
-}
-
-td {
-    border: none;
-    border-collapse: collapse;
-	text-align: left;
-	padding: 2px;
-}
-
-table#t01 {
-	width:400px; 
-	height: 100px; 
-	margin-left:5px; 
-	max-width: 1920px;
-	min-width: 400px;
-	background-color: #ffffff;
-	border: 4px solid black;
-	border-collapse: collapse;
-}
-
-table#t02 {
-	width:400px; 
-	margin-left:5px; 
-	max-width: 1920px;
-	min-width: 400px;
-	background-color: #ffffff;
-	border: 4px solid black;
-	border-collapse: collapse;
-}
-
-table#t03 {
-	width:390px; 
-	margin-left:5px; 
-	max-width: 1920px;
-	min-width: 390px;
-	background-color: #ffffff;
-	border: none;
-	border-collapse: collapse;
-	text-align: left;
-}
-
-th#th03 {
-	background-color:  #cccccc;
-    border: 1px solid black;
-    border-collapse: collapse;
-	text-align: left;
-	padding: 5px;
-}
-
-td#td03 {
-    border: 1px solid black;
-    border-collapse: collapse;
-	text-align: left;
-	padding: 5px;
-}
-
-table#t04 {
-	width:390px; 
-	height: 100px; 
-	margin-left:5px;
-	margin-right:5px;	
-	max-width: 1920px;
-	min-width: 390px;
-	background-color: #ffffff;
-	border: none;
-	border-collapse: collapse;
-	text-align: left;
-	padding: 2px;
-}
-
-th#th04 {
-	background-color:  #cccccc;
-    border: 3px solid black;
-    border-collapse: collapse;
-	text-align: left;
-	padding: 2px;
-	height: 40px;
-}
-
-td#td04 {
-    border: 3px solid black;
-    border-collapse: collapse;
-	text-align: left;
-	padding: 2px;
-	height: 40px;
-}
-
-table#t_gallery {
-	width:390px; 
-	height: 100px; 
-	margin-left:5px; 
-	max-width: 1920px;
-	min-width: 390px;
-	background-color: #ffffff;
-	border: none;
-	border-collapse: collapse;
-	text-align: left;
-	padding:15px;
-}
-
-img {
-  width: 100%;
-  display: block;
-}
-
-td#td_gallery {
-    border: none;
-    border-collapse: collapse;
-	margin: auto;
-    padding: 10px;
-	width: 15%;
-	float: left;
-}
-
-div {
-	border-style: none;
-	text-align: left;
-	min-height: 20px;
-}
-
-div.a {
-    font-size: 16px;
-	font-family: Verdana, Geneva, sans-serif;
-	color: black;
-	text-align: left;
-}
-
-div.b {
-    font-size: 10px;
-	font-family: Verdana, Geneva, sans-serif;
-	color: black;
-	text-align: left;
+	height:90%;
+    width:90%;
 }
 
 h1 {
@@ -243,8 +197,3 @@ h3 {
 	font-size: 100%;
 	font-family: Verdana, Geneva, sans-serif;
 } 
-
-ul.list1 {
-    list-style-type: square;
-}
-
