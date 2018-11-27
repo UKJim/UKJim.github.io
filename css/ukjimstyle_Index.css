@@ -22,13 +22,14 @@ div.header{
 }
 
 div.current_time_zulu_left {
-    background-color:  white;
-	width:20%; 
+    	background-color:  white;
+	width:36%; 
 	height: 2%;
 	position: absolute;
 	top: 13%;
-	left: 30%;
-    border: none;
+	left: 32%;
+	right: 32%;
+    	border: none;
 	text-align: left;
 	font-size: 12px;
 	font-family: Verdana, Geneva, sans-serif;
