@@ -16,7 +16,7 @@ function startTime() {
     m = checkTime(m);
     s = checkTime(s);
     document.getElementById('txt').innerHTML =
-    h + ":" + m + ":" + s;
+    "Zulu Time: " + h + ":" + m + ":" + s;
     var t = setTimeout(startTime, 500);
 }
 function checkTime(i) {
@@ -37,9 +37,6 @@ function checkTime(i) {
 		<hr class="hline_down" />
 	</div>
 	<div class="current_time_zulu_left">
-		Current Zulu Time: 
-	</div>
-	<div class="current_time_zulu_right">
 		<div id="txt"></div>
 	</div>
 	<div class="list_box_1">
