@@ -40,9 +40,9 @@ div.current_time_zulu_left {
 div.list_box_1 {
     background-color:  white;
 	width:90%; 
-	height: 30%;
+	height: 22%;
 	position: absolute;
-	top: 17%;
+	top: 20%;
     right: 5%;
 	left: 5%;
 	font-size: 16px;
@@ -56,9 +56,9 @@ div.list_box_1 {
 div.list_box_2 {
     background-color:  white;
 	width:90%; 
-	height: 10%;
+	height: 6%;
 	position: absolute;
-	top: 42%;
+	top: 45%;
     right: 5%;
 	left: 5%;
 	font-size: 16px;
@@ -94,7 +94,7 @@ div.line_dashed{
 	height: 5%;
 	background-color: #ffffff;
 	position: absolute;
-	top: 40%;
+	top: 42%;
     right: 0%;
 	left: 0%;
 }
