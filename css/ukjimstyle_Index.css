@@ -23,24 +23,18 @@ div.header{
 
 div.current_time_zulu_left {
     	background-color:  white;
-	width:36%; 
+	width:40%; 
 	height: 3%;
 	position: absolute;
 	top: 13%;
-	left: 32%;
-	right: 32%;
+	left: 30%;
+	right: 30%;
     	border: none;
 	text-align: left;
 	font-size: 16px;
 	font-family: Verdana, Geneva, sans-serif;
 	font-weight: bold;
 	padding: 0%;
-}
-
-div.txt {
-	font-size: 16px;
-	font-family: Verdana, Geneva, sans-serif;
-	font-weight: bold;
 }
 
 div.list_box_1 {
