@@ -24,14 +24,14 @@ div.header{
 div.current_time_zulu_left {
     	background-color:  white;
 	width:36%; 
-	height: 2%;
+	height: 3%;
 	position: absolute;
 	top: 13%;
 	left: 32%;
 	right: 32%;
     	border: none;
 	text-align: left;
-	font-size: 14px;
+	font-size: 16px;
 	font-family: Verdana, Geneva, sans-serif;
 	font-weight: bold;
 	padding: 0%;
