@@ -23,7 +23,7 @@ div.header{
 
 div.current_time_zulu_left {
     background-color:  white;
-	width:22%; 
+	width:30%; 
 	height: 2%;
 	position: absolute;
 	top: 13%;
@@ -42,7 +42,7 @@ div.current_time_zulu_right {
 	height: 2%;
 	position: absolute;
 	top: 13%;
-	left: 55%;
+	left: 63%;
     border: none;
 	text-align: left;
 	font-size: 12px;
