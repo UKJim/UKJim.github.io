@@ -37,21 +37,6 @@ div.current_time_zulu_left {
 	padding: 0%;
 }
 
-div.current_time_zulu_right {
-    background-color:  white;
-	width:10%; 
-	height: 2%;
-	position: absolute;
-	top: 13%;
-	left: 63%;
-    border: none;
-	text-align: left;
-	font-size: 12px;
-	font-family: Verdana, Geneva, sans-serif;
-	font-weight: bold;
-	padding: 0%;
-}
-
 div.list_box_1 {
     background-color:  white;
 	width:90%; 
