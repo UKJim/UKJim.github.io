@@ -6,8 +6,27 @@
 <meta http-equiv="Expires" content="0" />
 <link rel="stylesheet" type="text/css" href="css/ukjimstyle_Index.css">
 <title>Descent Planner</title>
+
+<script>
+function startTime() {
+    var today = new Date();
+    var h = today.getUTCHours();
+    var m = today.getUTCMinutes();
+    var s = today.getUTCSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+</script>
+
 </head>
-<body>
+<body onload="startTime()">
 	
 <div class="container">
 
@@ -16,6 +35,12 @@
 	</div>
 	<div class="line_down">
 		<hr class="hline_down" />
+	</div>
+	<div class="current_time_zulu_left">
+		Current Zulu Time: 
+	</div>
+	<div class="current_time_zulu_right">
+		<div id="txt"></div>
 	</div>
 	<div class="list_box_1">
 		<ul class="list1">
