@@ -58,7 +58,7 @@ div.list_box_2 {
 	width:90%; 
 	height: 15%;
 	position: absolute;
-	top: 45%;
+	top: 50%;
     right: 5%;
 	left: 5%;
 	font-size: 16px;
@@ -94,7 +94,7 @@ div.line_dashed{
 	height: 5%;
 	background-color: #ffffff;
 	position: absolute;
-	top: 42%;
+	top: 47%;
     right: 0%;
 	left: 0%;
 }
