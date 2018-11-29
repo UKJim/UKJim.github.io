@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Expires" content="0" />
+<link rel="stylesheet" type="text/css" href="css/ukjimstyle_Zoom.css">
+<title>Zoom Calculator</title>
+</head>
+<body>
+
+<div class="container">
+
+	<div class="header">
+		<h1>Zoom Calculator</h1>
+	</div>
+	<div class="line_down">
+		<hr class="hline_down" />
+	</div>
+
+	<div class="descriptive_text1">
+		Monitor and Distance Details:
+	</div>
+	<div class="b">Monitor screen height is the height of the actual screen - distance is the distance from the screen to your eyes. All measurements are in CM</div>
+	<div class="table_container2">
+		<form name="alt_convert" >
+			<div class="Monitor_header">
+				Monitor Screen Height
+			</div>
+			<div class="Distance_header">
+				Distance from screen
+			</div>
+			<div class="Monitor_input">
+				<input type = "text" id = "n1" onchange="ZoomFunction()" value="30"/>
+			</div>
+			<div class="Distance_input">
+				<input type = "text" id = "n2" onchange="ZoomFunction()" value="0" />
+			</div>
+				
+	
+	<div class="line_dashed">
+		<hr class="hline_dashed" />
+	</div>
+	
+		<div class="Zoom_header">
+				Zoom x
+		</div>
+			<div id="zoom_value"></div>
+	
+	</div>
+	
+	<div class="line_up_2">
+		<hr class="hline_up" />
+	</div>
+	</form>
+	
+	<div class="home">
+		<a href="index.html">HOME</a>
+	</div>
+</div>
+
+<script type="text/javascript">
+
+function ZoomFunction() {
+
+	screen_height = parseFloat(document.getElementById("n1").value, 10);
+    distance = parseFloat(document.getElementById("n2").value, 10);
+	var a = screen_height/(2*distance);
+	var b = Math.atan(a);
+    var c = 2*(b*(180/Math.PI));
+    var z = 34/c;
+    
+    document.getElementById("zoom_value").innerHTML = z.toFixed(2);
+}
+  
+</script>
+
+
+</body>
+</html>
